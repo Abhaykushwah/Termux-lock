@@ -1,4 +1,6 @@
 import os
+from getpass import getpass
+
 change_your_username_here = "root"
 change_your_password_here = "1290"
 ## checking user_name
@@ -12,7 +14,8 @@ def enteruname():
 
 ### checking password
 def enterpasswd():
-	passwd = str(input("Enter passwor :"))
+# 	passwd = str(input("Enter passwor :"))
+	passwd = str(getpass("Enter your password : "))
 	if passwd == change_your_password_here:
 		print("Nothing")
 	else:
